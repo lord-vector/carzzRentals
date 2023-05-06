@@ -1,0 +1,10 @@
+__v,_id,createdAt,email,password,role,updatedAt,user_name
+0,64564ec70dd3ddad09a56b1c,2023-05-06T12:57:43.096Z,Mo.salah@test.com,$2b$10$Zrp6hj/iKzR7XABf9nCv7uZBBWyj8Ev49v8xtx9LePosYLQ8Y/JR6,user,2023-05-06T12:57:43.096Z,Mo Salah
+0,645687bb471a0f653555de98,2023-05-06T17:00:43.785Z,pedro.poro@test.com,$2b$10$ADBxhjadYX.KkpA1VwPKueQBV5gDipStO5g0rU4s/OJL5boYlGhwK,admin,2023-05-06T17:00:43.785Z,pedro poro
+0,645687e9471a0f653555de9b,2023-05-06T17:01:29.776Z,harry.kane@test.com,$2b$10$dxGwb8nahJPrWbBGyGq2NuNh29CeRCIgMFueoicmu0ulUvnH6Zu4e,user,2023-05-06T17:01:29.776Z,harry kane
+0,64569be8f0892e9d99a6559d,2023-05-06T18:26:48.806Z,hugo.lloris@test.com,$2b$10$68a0TIZKFMl9norKmRjOZu76..nTVr7SFvuPQyj1Afsex1Oh20Xpy,owner,2023-05-06T18:26:48.806Z,hugo lloris
+0,64569d72f0892e9d99a655a0,2023-05-06T18:33:22.460Z,r.anuj.agrawal@test.com,$2b$10$s4vnf74.xkfaSeuccVGPX.a3QE7MJOzzV0OxGZNsd4clTM6Db2S4a,user,2023-05-06T18:33:22.460Z,R Anuj Agrawal
+0,64569dadf0892e9d99a655a4,2023-05-06T18:34:21.396Z,megha.saarang@test.com,$2b$10$.btvT15pSuCaLXMLph15Y.2nEqPQMisleI0hzxvfM5Qq1XlQey0l6,user,2023-05-06T18:34:21.396Z,Megha Saarang
+0,64569dd4f0892e9d99a655a7,2023-05-06T18:35:00.059Z,anshul@test.com,$2b$10$Z90SvnbcwhQN5MVAoaqKFu/3PZo5bl/R1gPiKgLpdCpsU2vvCH41u,user,2023-05-06T18:35:00.059Z,Anshul
+0,64569eb0f0892e9d99a655aa,2023-05-06T18:38:40.150Z,mangal.prakash@test.com,$2b$10$NfuB8/gL3/qMvTYmKWMs/OxXs4NLY/az6tZHyFi0FQ8GZTLuOjdT.,user,2023-05-06T18:38:40.150Z,Mangal Prakash
+0,64569f6df0892e9d99a655ad,2023-05-06T18:41:49.909Z,jyoti.agrawal@test.com,$2b$10$3HciW2V2Wq5HscOOutdotu07GZHP5CdHiUovo10mlV2jxhr6YEhIm,user,2023-05-06T18:41:49.909Z,Jyoti Agrawal
