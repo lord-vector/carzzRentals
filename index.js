@@ -1,3 +1,5 @@
+const bcrypt = require("bcrypt");
+
 //express related block
 const express = require("express");
 const app = express();
@@ -16,7 +18,9 @@ mongoose.connect(process.env.MONGOURL).then(() => {
 
 //routes
 const UserRouter = require("./routes/users.routes");
+const CarsRoutes = require("./routes/cars.routes");
 app.use("/user", UserRouter);
+app.use("/cars", CarsRoutes);
 
 //connection to server
 const port = process.env.PORT;

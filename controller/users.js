@@ -1,8 +1,13 @@
 const userModel = require("../model/users.schema");
+const bcrypt = require("bcrypt");
 
-const registerUser = (req, res) => {
-  const { userName, email, password, role } = req.body;
+const registerUser = async (req, res) => {
+  let { userName, email, password, role } = req.body;
   console.log(userName, email, password, role);
+  const salt = await bcrypt.genSalt(10);
+  password = await bcrypt.hash(password, salt);
+  console.log(password);
+  //password is going to get stored in my database
   const userObj = {
     user_name: userName,
     password: password,
@@ -29,13 +34,16 @@ const registerUser = (req, res) => {
   });
 };
 
-const userLogin = (req, res) => {
+const userLogin = async (req, res) => {
   const { email, password } = req.body;
-  userModel
-    .find({ email })
-    .then((data) => {
-      if (data.length !== 0) {
-        if (data.password === password) {
+  const data = await userModel.find({ email });
+  try {
+    if (email && password) {
+      if (data.length > 0) {
+        console.log(data[0].password);
+        const compare = await bcrypt.compare(password, data[0].password);
+        // if (data.length !== 0) {
+        if (compare) {
           res.send({
             message: `login successfull`,
           });
@@ -51,10 +59,12 @@ const userLogin = (req, res) => {
           message: "user doesn't exist, please register to continue",
         });
       }
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+    } else {
+      throw "fields cannot be empty";
+    }
+  } catch (err) {
+    res.send({ message: err });
+  }
 };
 
 module.exports = { registerUser, userLogin };
